@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient( rgba( 255, 73, 73, 1), rgba(96,36,141,1));
+    font-family: 'poppins', sans-serif;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 12vh;
+    background: #ff4949;
+    box-shadow: 2px 2px 15px rgba(43, 3, 75);
+    position: relative;
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+ul.nav-links li {
+    width: 120px;
+}
+
+ul.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+ul.nav-links li a.active::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -30px;
+    left: -5px;
+}
+
+/* Target the links and add pseudo class to it */
+
+ul.nav-links li a::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: #fff;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -30px;
+    left: -5px;
+    transition:  all .2s linear;
+}
+
+ul.nav-links li a:hover::after{
+    width: 110%;
+}
+
+#btn {
+    width: 150px;
+    padding: 14px;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 30px;
+}
+
+#btn a {
+    text-decoration: none;
+    color: #ff4949;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Header End */
