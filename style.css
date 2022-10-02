@@ -75,12 +75,16 @@ ul.nav-links li a:hover::after{
 }
 
 #btn {
-    width: 150px;
+    width: 170px;
     padding: 14px;
     outline: none;
     border: none;
     background: #fff;
     border-radius: 30px;
+}
+
+#btn .fa {
+    margin-right: 15px;
 }
 
 #btn a {
@@ -91,3 +95,139 @@ ul.nav-links li a:hover::after{
 }
 
 /* Header End */
+
+.content-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content-desc {
+    width: 500px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    top: 50px;
+}
+
+.content-desc h1 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+h1 span {
+    color: #ffb904;
+}
+
+.content-desc p {
+    font-size: 1.2rem;
+    width: 500px;
+    margin-top: 20px;
+    line-height: 2rem;
+}
+
+#btn-2 {
+    width: 150px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: #fff;
+    margin-top: 25px;
+    border-radius: 8px;
+    transition: all .2s linear;
+    display: flex;
+    align-items: center;
+}
+
+#btn-2 .fa {
+    font-size: 1.2rem;
+    color: #ff4949;
+    margin-left: 15px;
+}
+
+#btn-2:hover {
+    justify-content: space-between;
+    width: 165px;
+    background: #d3d3d3;
+}
+
+#btn-2 a {
+    text-decoration: none;
+    color: #ff4949;
+    font-size: 14px;
+}
+
+.launch {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.launch .fa{
+    font-size: 4.5rem;
+    background: linear-gradient( #ff4949, #5d248d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-image {
+    width: 440px;
+    height: 300px;
+    background: url(./images/Army.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    opacity: 0.5;
+    margin-top: 40px;
+}
+
+.content-wrapper::before {
+    content: '';
+    width: 70px;
+    height: 60px;
+    background: url(./images/eye-cyber-circuit-future-technology-concept-background-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 10px;
+    left: -60px;
+    border-radius: 60%;
+    opacity: 0.8;
+    animation: circle 10s ease-in-out infinite; 
+}
+
+@keyframes circle {
+    50% {
+        transform: rotate(-360deg);
+        top: 400px;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        top: -50px;
+    }
+    
+}
+
+/* .content-wrapper::after {
+    content: '';
+    width: 70px;
+    height: 60px;
+    background: url(./images/istockphoto-after.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    right: -60px;
+    opacity: 0.8;
+    border-radius: 60%;
+    z-index: -1;
+} */
+
