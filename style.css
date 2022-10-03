@@ -8,7 +8,7 @@
 
 body{
     height: 100vh;
-    background: linear-gradient( rgba( 255, 73, 73, 1), rgba(96,36,141,1));
+    background: linear-gradient( rgba( 255, 73, 73, 1), rgba(96,36,141,1)) !important;
     font-family: 'poppins', sans-serif;
     position: relative;
 }
@@ -172,9 +172,24 @@ h1 span {
 
 .launch .fa{
     font-size: 4.5rem;
-    background: linear-gradient( #ff4949, #5d248d);
+    background: linear-gradient( #ff4949,#5d248d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: rocket .5s ease-in-out infinite;
+}
+
+@keyframes rocket {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
 }
 
 .hero-image {
@@ -231,3 +246,137 @@ h1 span {
     z-index: -1;
 } */
 
+/* Section 2 */
+
+.section-2 {
+    width: 84%;
+    margin: 50px auto 0;
+    display: flex;
+    color: #ffb904;
+}
+
+.cast-wrapper {
+    margin-top: 30px;
+    width: 500px;
+}
+
+.cast {
+    display: flex;;
+}
+
+.cast-img{
+    width: 50px;
+    height: 50px;
+    background: url(./images/cast-1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.img-2 {
+    background: url(./images/img-2.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: -10px;
+}
+
+.img-3 {
+    background: url(./images/img-5.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: -10px;
+}
+.img-4 {
+    background: url(./images/img-3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: -10px;
+}
+.img-5 {
+    background: url(./images/img-4.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: -10px;
+}
+
+#number{  
+    width:20px;
+    position: relative;
+    left: -35px;
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+.social-icons .fa {
+    font-size: 1.2rem;
+    color: #fff;
+    position: relative;
+    top: 25px;
+    margin-right: 25px;
+}
+
+/* .squid-game {
+    width: 500px;
+    height: 250px;
+    background: url(./images/mizuri-squidgamemoneyheist-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -70px;
+    left: -170px;
+    opacity: 0.4;
+}
+
+footer {
+    display: flex;
+}
+
+footer span {
+    margin-top: 30px;
+}
+
+footer {
+    margin-top: 25px;
+}
+
+.mask {
+    width: 70px;
+    height: 70px;
+    background: url(./images/mask.webp);
+    background-size: cover;
+    background-position: center;
+    margin-top: 15px;
+} */
+
+.hero-image-2 {
+    width: 400px;
+    height: 500px;
+    background: url(./images/hero-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+
+}
+
+.hero-image-2::before {
+    content: '';
+}
+
+
+.squid-game {
+    width: 500px;
+    height: 150px;
+    background: url(./images/mizuri-squidgamemoneyheist-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -90px;
+    left: 200px;
+    opacity: 0.7;
+}
